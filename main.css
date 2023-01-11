@@ -36,27 +36,121 @@ li a{
     font-weight: bold;
 }
 
-section .container {
-    align-items: flex-start;
-}
-
-.container img {
+.sobre img {
     max-width: 100%;
     width: 360px;
-}
-
-.conteudo {
-    display: grid;
-    grid-template-columns: 70% 30%;
+    margin-right: 16px;
 }
 
 .informacao {
-    padding: 16px;
-
+    align-items: center;
+    justify-content: space-between;
+    display: inline;
 }
 
-div h2 {
+.informacao h2,
+.produtos h2 {
     color: #ffc0CB;
     border-bottom: 1px solid #ffc0CB;
     padding: 16px;
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobre {
+    margin-bottom: 56px;
+    margin-top: 32px;
+    display: flex;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.tortas {
+    flex-wrap: wrap;
+}
+
+.tortas li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.tortas li img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #ffc0CB;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #D98696;
+}
+
+@media screen and (max-width: 767px) {
+
+    header .container,
+    section .container {
+        display: block;
+        align-items: center;
+    }
+    .sobre img {
+        max-width:90%;
+        margin: 0 16px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .container-flex {
+        display: block;
+    }
 }
