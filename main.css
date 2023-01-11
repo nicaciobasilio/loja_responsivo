@@ -42,11 +42,7 @@ li a{
     margin-right: 16px;
 }
 
-.informacao {
-    align-items: center;
-    justify-content: space-between;
-    display: inline;
-}
+
 
 .informacao h2,
 .produtos h2 {
@@ -151,6 +147,26 @@ button:hover {
     }
 
     .container-flex {
+        display: block;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+    }
+
+    li{
+        display: block;
+        padding-right: 16px;
+    }
+
+    .tortas li {
+        list-style: none;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .sobre {
         display: block;
     }
 }
